@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@google-analytics/data": "^3.0.3",
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.2"
+  }
+}
