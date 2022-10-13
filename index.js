@@ -10,8 +10,6 @@ const {BetaAnalyticsDataClient} = require('@google-analytics/data');
 // const GOOGLE_APPLICATION_CREDENTIALS="credentials.json";
 const analyticsDataClient = new BetaAnalyticsDataClient();
 
-console.log(process.env);
-
 // Runs a simple report.
 async function runReport() {
     try {
@@ -36,7 +34,7 @@ async function runReport() {
           });
         
         console.log('Report result:');
-        // console.log(response);
+        console.log(response);
         response.rows.forEach(row => {
             console.log(row.dimensionValues[0], row.metricValues[0]);
         });
